@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
         .border-debug {
             border: 1px solid red;
         }
@@ -25,15 +17,12 @@
             width: 520px;
             height: 500px;
         }
-        .about-me{
-            width: auto;
-            float: left;
+        .container{
+            display: flex;
         }
-        .right-content {
-            float: right;
-
+        footer {
+            margin-top: 10px;
         }
-
     </style>
 </head>
 <body>
@@ -56,8 +45,8 @@
             </ul>
         </div>
         <!-- Main banner -->
-        <div>
-            <section class="main-banner">
+        <div class="main-banner">
+            <section class="container">
                 <div class="about-me border-debug">
                     <h1>Hello, I'm <br> Kristian Suriyadharma</h1>   
                     <p><span>Undergraduated Computer Science Student</span> in Pertamina University, I am passionate about mobile and web development. I have experience in both fields and I am particularly interested in deepening my skills in Flutter. I am excited to work with a dynamic team where I can contribute my skills and innovative solutions.</p>
@@ -83,7 +72,9 @@
         <label for="">Email : </label>
         <input type="text" id="html" name="fav_language" value="">
 
-
+        <center>
+            <h4>2023&copy; Chandramawa CV by Kristian Suriyadharma</h4>
+        </center>
     </footer>
 </body>
 </html>
