@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .border-debug {
+            border: 1px solid red;
+        }
+        .main-banner {
+            margin-top: 10px;
+            border: 1px solid red;
+            display: inline-block ;
+        }
+        .profile-pic{
+            width: 520px;
+            height: 500px;
+        }
+        .about-me{
+            width: auto;
+            float: left;
+        }
+        .right-content {
+            float: right;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navigasi -->
+        <div class="navbar border-debug">
+            <h2>Kristian Suriyadharma</h2>
+            <!-- <nav>
+                <a href="#">about</a>
+                <a href="#">skill</a>
+                <a href="#">Project</a>
+                <a href="#">Contact</a>
+
+            </nav> -->
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Main banner -->
+        <div>
+            <section class="main-banner">
+                <div class="about-me border-debug">
+                    <h1>Hello, I'm <br> Kristian Suriyadharma</h1>   
+                    <p><span>Undergraduated Computer Science Student</span> in Pertamina University, I am passionate about mobile and web development. I have experience in both fields and I am particularly interested in deepening my skills in Flutter. I am excited to work with a dynamic team where I can contribute my skills and innovative solutions.</p>
+                </div>
+                <div class="right-content border-debug">
+                    <img class="profile-pic" src="https://cdn1-production-images-kly.akamaized.net/EjhIyV54AfcvLbmOmgDo1SISfo4=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3100523/original/027241600_1586760767-30603897_159359444755504_5421445043447660544_n.jpg" alt="profile-pic">
+                </div>
+            </section>
+        </div>
+    </header>
+    <footer class="border-debug">
+        <h2>Rate this portofolio</h2>
+        <input type="radio" id="html" name="fav_language" value="Good">
+        <label for="">Good</label>
+
+        <input type="radio" id="html" name="fav_language" value="VeryGood">
+        <label for="">Very Good</label>
+
+        <input type="submit" value="Submit">
+
+        <br><br>
+
+        <label for="">Email : </label>
+        <input type="text" id="html" name="fav_language" value="">
+
+
+    </footer>
+</body>
+</html>
