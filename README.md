@@ -1,0 +1,4 @@
+# my-portofolio
+this is my first personal portofolio i made by html and css for styling
+
+Portofolio ini diajukan sebagai tugas tiap post test praktikum pemrograman web
